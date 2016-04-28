@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B1D54671CC8695E0050D184 /* TYTableViewDelegateController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1D54661CC8695E0050D184 /* TYTableViewDelegateController.m */; };
+		1B1D546C1CC877820050D184 /* TYTableViewDataSourceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B1D546B1CC877820050D184 /* TYTableViewDataSourceController.m */; };
+		1B304EE61CC7748100557140 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B304EE51CC7748100557140 /* main.m */; };
+		1B304EE91CC7748100557140 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B304EE81CC7748100557140 /* AppDelegate.m */; };
+		1B304EEC1CC7748100557140 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B304EEB1CC7748100557140 /* ViewController.m */; };
+		1B304EEF1CC7748100557140 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B304EED1CC7748100557140 /* Main.storyboard */; };
+		1B304EF11CC7748100557140 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B304EF01CC7748100557140 /* Assets.xcassets */; };
+		1B304EF41CC7748100557140 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B304EF21CC7748100557140 /* LaunchScreen.storyboard */; };
+		1B304EFF1CC7748100557140 /* TYTableViewProjTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B304EFE1CC7748100557140 /* TYTableViewProjTests.m */; };
+		1B304F0B1CC774E800557140 /* OpenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B304F0A1CC774E800557140 /* OpenViewController.m */; };
+		1B304F0F1CC776CF00557140 /* TYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B304F0E1CC776CF00557140 /* TYTableView.m */; };
+		1B304F131CC7770500557140 /* TYTableBaseSectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B304F121CC7770500557140 /* TYTableBaseSectionModel.m */; };
+		1B304F161CC7771B00557140 /* TYTableBaseRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B304F151CC7771B00557140 /* TYTableBaseRowModel.m */; };
+		1B304F191CC7795A00557140 /* TYTableViewBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B304F181CC7795A00557140 /* TYTableViewBaseCell.m */; };
+		1B304F1C1CC77CCA00557140 /* TYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B304F1B1CC77CCA00557140 /* TYTableViewController.m */; };
+		1B3E7EDC1CD092B50086A1CB /* OpenDataSourceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3E7EDB1CD092B50086A1CB /* OpenDataSourceManager.m */; };
+		1B3E7EDF1CD099240086A1CB /* OpenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B3E7EDE1CD099240086A1CB /* OpenTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B304EFB1CC7748100557140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1B304ED91CC7748100557140 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1B304EE01CC7748100557140;
+			remoteInfo = TYTableViewProj;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B1D54651CC8695E0050D184 /* TYTableViewDelegateController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTableViewDelegateController.h; sourceTree = "<group>"; };
+		1B1D54661CC8695E0050D184 /* TYTableViewDelegateController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTableViewDelegateController.m; sourceTree = "<group>"; };
+		1B1D54681CC86AB30050D184 /* TYTableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTableViewDelegate.h; sourceTree = "<group>"; };
+		1B1D54691CC86AC30050D184 /* TYTableViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TYTableViewDataSource.h; sourceTree = "<group>"; };
+		1B1D546A1CC877820050D184 /* TYTableViewDataSourceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTableViewDataSourceController.h; sourceTree = "<group>"; };
+		1B1D546B1CC877820050D184 /* TYTableViewDataSourceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTableViewDataSourceController.m; sourceTree = "<group>"; };
+		1B304EE11CC7748100557140 /* TYTableViewProj.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TYTableViewProj.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B304EE51CC7748100557140 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1B304EE71CC7748100557140 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1B304EE81CC7748100557140 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1B304EEA1CC7748100557140 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1B304EEB1CC7748100557140 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1B304EEE1CC7748100557140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1B304EF01CC7748100557140 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1B304EF31CC7748100557140 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1B304EF51CC7748100557140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B304EFA1CC7748100557140 /* TYTableViewProjTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TYTableViewProjTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B304EFE1CC7748100557140 /* TYTableViewProjTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TYTableViewProjTests.m; sourceTree = "<group>"; };
+		1B304F001CC7748100557140 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B304F091CC774E800557140 /* OpenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenViewController.h; sourceTree = "<group>"; };
+		1B304F0A1CC774E800557140 /* OpenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenViewController.m; sourceTree = "<group>"; };
+		1B304F0D1CC776CF00557140 /* TYTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTableView.h; sourceTree = "<group>"; };
+		1B304F0E1CC776CF00557140 /* TYTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTableView.m; sourceTree = "<group>"; };
+		1B304F111CC7770500557140 /* TYTableBaseSectionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTableBaseSectionModel.h; sourceTree = "<group>"; };
+		1B304F121CC7770500557140 /* TYTableBaseSectionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTableBaseSectionModel.m; sourceTree = "<group>"; };
+		1B304F141CC7771B00557140 /* TYTableBaseRowModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTableBaseRowModel.h; sourceTree = "<group>"; };
+		1B304F151CC7771B00557140 /* TYTableBaseRowModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTableBaseRowModel.m; sourceTree = "<group>"; };
+		1B304F171CC7795A00557140 /* TYTableViewBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTableViewBaseCell.h; sourceTree = "<group>"; };
+		1B304F181CC7795A00557140 /* TYTableViewBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTableViewBaseCell.m; sourceTree = "<group>"; };
+		1B304F1A1CC77CCA00557140 /* TYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTableViewController.h; sourceTree = "<group>"; };
+		1B304F1B1CC77CCA00557140 /* TYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTableViewController.m; sourceTree = "<group>"; };
+		1B3E7EDA1CD092B50086A1CB /* OpenDataSourceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenDataSourceManager.h; sourceTree = "<group>"; };
+		1B3E7EDB1CD092B50086A1CB /* OpenDataSourceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenDataSourceManager.m; sourceTree = "<group>"; };
+		1B3E7EDD1CD099240086A1CB /* OpenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenTableViewCell.h; sourceTree = "<group>"; };
+		1B3E7EDE1CD099240086A1CB /* OpenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1B304EDE1CC7748100557140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B304EF71CC7748100557140 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1B304ED81CC7748100557140 = {
+			isa = PBXGroup;
+			children = (
+				1B304EE31CC7748100557140 /* TYTableViewProj */,
+				1B304EFD1CC7748100557140 /* TYTableViewProjTests */,
+				1B304EE21CC7748100557140 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1B304EE21CC7748100557140 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1B304EE11CC7748100557140 /* TYTableViewProj.app */,
+				1B304EFA1CC7748100557140 /* TYTableViewProjTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1B304EE31CC7748100557140 /* TYTableViewProj */ = {
+			isa = PBXGroup;
+			children = (
+				1B304EE71CC7748100557140 /* AppDelegate.h */,
+				1B304EE81CC7748100557140 /* AppDelegate.m */,
+				1B304EEA1CC7748100557140 /* ViewController.h */,
+				1B304EEB1CC7748100557140 /* ViewController.m */,
+				1B304F0C1CC776AB00557140 /* TYTableView */,
+				1B304F091CC774E800557140 /* OpenViewController.h */,
+				1B304F0A1CC774E800557140 /* OpenViewController.m */,
+				1B3E7EDA1CD092B50086A1CB /* OpenDataSourceManager.h */,
+				1B3E7EDB1CD092B50086A1CB /* OpenDataSourceManager.m */,
+				1B3E7EDD1CD099240086A1CB /* OpenTableViewCell.h */,
+				1B3E7EDE1CD099240086A1CB /* OpenTableViewCell.m */,
+				1B304EED1CC7748100557140 /* Main.storyboard */,
+				1B304EF01CC7748100557140 /* Assets.xcassets */,
+				1B304EF21CC7748100557140 /* LaunchScreen.storyboard */,
+				1B304EF51CC7748100557140 /* Info.plist */,
+				1B304EE41CC7748100557140 /* Supporting Files */,
+			);
+			path = TYTableViewProj;
+			sourceTree = "<group>";
+		};
+		1B304EE41CC7748100557140 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1B304EE51CC7748100557140 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1B304EFD1CC7748100557140 /* TYTableViewProjTests */ = {
+			isa = PBXGroup;
+			children = (
+				1B304EFE1CC7748100557140 /* TYTableViewProjTests.m */,
+				1B304F001CC7748100557140 /* Info.plist */,
+			);
+			path = TYTableViewProjTests;
+			sourceTree = "<group>";
+		};
+		1B304F0C1CC776AB00557140 /* TYTableView */ = {
+			isa = PBXGroup;
+			children = (
+				1B304F0D1CC776CF00557140 /* TYTableView.h */,
+				1B304F0E1CC776CF00557140 /* TYTableView.m */,
+				1B1D54681CC86AB30050D184 /* TYTableViewDelegate.h */,
+				1B1D54691CC86AC30050D184 /* TYTableViewDataSource.h */,
+				1B304F111CC7770500557140 /* TYTableBaseSectionModel.h */,
+				1B304F121CC7770500557140 /* TYTableBaseSectionModel.m */,
+				1B304F141CC7771B00557140 /* TYTableBaseRowModel.h */,
+				1B304F151CC7771B00557140 /* TYTableBaseRowModel.m */,
+				1B304F171CC7795A00557140 /* TYTableViewBaseCell.h */,
+				1B304F181CC7795A00557140 /* TYTableViewBaseCell.m */,
+				1B304F1A1CC77CCA00557140 /* TYTableViewController.h */,
+				1B304F1B1CC77CCA00557140 /* TYTableViewController.m */,
+				1B1D54651CC8695E0050D184 /* TYTableViewDelegateController.h */,
+				1B1D54661CC8695E0050D184 /* TYTableViewDelegateController.m */,
+				1B1D546A1CC877820050D184 /* TYTableViewDataSourceController.h */,
+				1B1D546B1CC877820050D184 /* TYTableViewDataSourceController.m */,
+			);
+			path = TYTableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1B304EE01CC7748100557140 /* TYTableViewProj */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B304F031CC7748100557140 /* Build configuration list for PBXNativeTarget "TYTableViewProj" */;
+			buildPhases = (
+				1B304EDD1CC7748100557140 /* Sources */,
+				1B304EDE1CC7748100557140 /* Frameworks */,
+				1B304EDF1CC7748100557140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TYTableViewProj;
+			productName = TYTableViewProj;
+			productReference = 1B304EE11CC7748100557140 /* TYTableViewProj.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1B304EF91CC7748100557140 /* TYTableViewProjTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B304F061CC7748100557140 /* Build configuration list for PBXNativeTarget "TYTableViewProjTests" */;
+			buildPhases = (
+				1B304EF61CC7748100557140 /* Sources */,
+				1B304EF71CC7748100557140 /* Frameworks */,
+				1B304EF81CC7748100557140 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1B304EFC1CC7748100557140 /* PBXTargetDependency */,
+			);
+			name = TYTableViewProjTests;
+			productName = TYTableViewProjTests;
+			productReference = 1B304EFA1CC7748100557140 /* TYTableViewProjTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1B304ED91CC7748100557140 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "天翼文化";
+				TargetAttributes = {
+					1B304EE01CC7748100557140 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					1B304EF91CC7748100557140 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 1B304EE01CC7748100557140;
+					};
+				};
+			};
+			buildConfigurationList = 1B304EDC1CC7748100557140 /* Build configuration list for PBXProject "TYTableViewProj" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1B304ED81CC7748100557140;
+			productRefGroup = 1B304EE21CC7748100557140 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1B304EE01CC7748100557140 /* TYTableViewProj */,
+				1B304EF91CC7748100557140 /* TYTableViewProjTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1B304EDF1CC7748100557140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B304EF41CC7748100557140 /* LaunchScreen.storyboard in Resources */,
+				1B304EF11CC7748100557140 /* Assets.xcassets in Resources */,
+				1B304EEF1CC7748100557140 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B304EF81CC7748100557140 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B304EDD1CC7748100557140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B304F0B1CC774E800557140 /* OpenViewController.m in Sources */,
+				1B3E7EDF1CD099240086A1CB /* OpenTableViewCell.m in Sources */,
+				1B1D54671CC8695E0050D184 /* TYTableViewDelegateController.m in Sources */,
+				1B3E7EDC1CD092B50086A1CB /* OpenDataSourceManager.m in Sources */,
+				1B1D546C1CC877820050D184 /* TYTableViewDataSourceController.m in Sources */,
+				1B304F0F1CC776CF00557140 /* TYTableView.m in Sources */,
+				1B304EEC1CC7748100557140 /* ViewController.m in Sources */,
+				1B304F191CC7795A00557140 /* TYTableViewBaseCell.m in Sources */,
+				1B304EE91CC7748100557140 /* AppDelegate.m in Sources */,
+				1B304F131CC7770500557140 /* TYTableBaseSectionModel.m in Sources */,
+				1B304F1C1CC77CCA00557140 /* TYTableViewController.m in Sources */,
+				1B304EE61CC7748100557140 /* main.m in Sources */,
+				1B304F161CC7771B00557140 /* TYTableBaseRowModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1B304EF61CC7748100557140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B304EFF1CC7748100557140 /* TYTableViewProjTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B304EFC1CC7748100557140 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1B304EE01CC7748100557140 /* TYTableViewProj */;
+			targetProxy = 1B304EFB1CC7748100557140 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1B304EED1CC7748100557140 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B304EEE1CC7748100557140 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1B304EF21CC7748100557140 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1B304EF31CC7748100557140 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1B304F011CC7748100557140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1B304F021CC7748100557140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1B304F041CC7748100557140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TYTableViewProj/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.189read.TYTableViewProj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1B304F051CC7748100557140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TYTableViewProj/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.189read.TYTableViewProj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1B304F071CC7748100557140 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TYTableViewProjTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.189read.TYTableViewProjTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYTableViewProj.app/TYTableViewProj";
+			};
+			name = Debug;
+		};
+		1B304F081CC7748100557140 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TYTableViewProjTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.189read.TYTableViewProjTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TYTableViewProj.app/TYTableViewProj";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B304EDC1CC7748100557140 /* Build configuration list for PBXProject "TYTableViewProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B304F011CC7748100557140 /* Debug */,
+				1B304F021CC7748100557140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B304F031CC7748100557140 /* Build configuration list for PBXNativeTarget "TYTableViewProj" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B304F041CC7748100557140 /* Debug */,
+				1B304F051CC7748100557140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1B304F061CC7748100557140 /* Build configuration list for PBXNativeTarget "TYTableViewProjTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1B304F071CC7748100557140 /* Debug */,
+				1B304F081CC7748100557140 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1B304ED91CC7748100557140 /* Project object */;
+}
