@@ -8,20 +8,20 @@ Pod::Spec.new do |s|
                    A longer description of TYTableView in Markdown format.
 
                    * A deep package for UITableView using MVC model,
-		    * Simplify the amount of code to use UITableView.!
+                   * Simplify the amount of code to use UITableView.
                    DESC
 
   s.homepage     = "https://github.com/chengdonghai/TYTableView"
-  s.license      = { :type => "MIT", :file => "LICENSE.txt" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
   s.author             = { "Donghai Cheng" => "dong723232@gmail.com" }
 
-  s.source       = { :git => "https://github.com/chengdonghai/TYTableView.git", :tag => "0.0.1" }
+  s.source       = { :git => "git@github.com:chengdonghai/TYTableView.git", :tag => "0.0.1" }
 
   s.source_files  = "TYTableViewProj/TYTableView","TYTableViewProj/TYTableView/*.{h,m}"
 
   s.public_header_files = "TYTableViewProj/TYTableView/*.h"
 
   s.requires_arc = true
-  s.platform     = :ios, “7.0”
+  s.platform     = :ios, "6.0"
 end
