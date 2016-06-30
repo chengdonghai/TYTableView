@@ -23,5 +23,7 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowWithObject:(id)object atIndexPath:(NSIndexPath*)indexPath;
 
 - (UIView *)tableView:(UITableView *)tableView headerViewForSectionObject:(TYTableBaseSectionModel *)sectionObject atSection:(NSInteger)section;
+- (UIView *)tableView:(UITableView *)tableView footerViewForSectionObject:(TYTableBaseSectionModel *)sectionObject atSection:(NSInteger)section;
+
 
 @end

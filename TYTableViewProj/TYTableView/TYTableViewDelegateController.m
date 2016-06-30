@@ -30,7 +30,9 @@
         }
         
     } else {
-        [tytableView.tyDelegate tableView:tytableView didSelectRowAtIndexPath:indexPath];
+        if(tytableView.tyDelegate && [tytableView.tyDelegate respondsToSelector:@selector(tableView:didSelectRowAtIndexPath:)]) {
+            [tytableView.tyDelegate tableView:tytableView didSelectRowAtIndexPath:indexPath];
+        }
     }
      
     
@@ -54,8 +56,11 @@
             return [tytableView.tyDelegate tableView:tytableView heightForRowAtIndexPath:indexPath];
         }
     } else {
-       return [tytableView.tyDelegate tableView:tytableView heightForRowAtIndexPath:indexPath];
+        if(tytableView.tyDelegate && [tytableView.tyDelegate respondsToSelector:@selector(tableView:heightForRowAtIndexPath:)]) {
+            return [tytableView.tyDelegate tableView:tytableView heightForRowAtIndexPath:indexPath];
+        }
     }
+    return 0;
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
@@ -76,19 +81,58 @@
             return [tytableView.tyDelegate tableView:tableView viewForHeaderInSection:section];
         }
     } else {
-        return [tytableView.tyDelegate tableView:tableView viewForHeaderInSection:section];
+        if(tytableView.tyDelegate && [tytableView.tyDelegate respondsToSelector:@selector(tableView:viewForHeaderInSection:)]) {
+            return [tytableView.tyDelegate tableView:tableView viewForHeaderInSection:section];
+        }
     }
+    return nil;
 }
+-(UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    TYTableView *tytableView = (TYTableView *)tableView;
+    
+    id<TYTableViewDataSource> dataSource = tytableView.tyDataSource;
+    id object = nil;
+    
+    if (dataSource && [dataSource respondsToSelector:@selector(tableView:objectForSectionAtSection:)]) {
+        object = [dataSource tableView:tableView objectForSectionAtSection:section];
+    }
+    
+    if (tytableView.tyDelegate && [tytableView.tyDelegate respondsToSelector:@selector(tableView:footerViewForSectionObject:atSection:)]) {
+        if (object) {
+            return [tytableView.tyDelegate tableView:tableView footerViewForSectionObject:object atSection:section];
+        } else {
+            return [tytableView.tyDelegate tableView:tableView viewForFooterInSection:section];
+        }
+    } else {
+        if(tytableView.tyDelegate && [tytableView.tyDelegate respondsToSelector:@selector(tableView:viewForFooterInSection:)]) {
+            return [tytableView.tyDelegate tableView:tableView viewForFooterInSection:section];
+        }
 
+    }
+    return nil;
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     TYTableView *tytableView = (TYTableView *)tableView;
 
-    if (tytableView.tyDelegate && [tytableView.tyDelegate tableView:tableView heightForHeaderInSection:section]) {
+    if (tytableView.tyDelegate && [tytableView.tyDelegate respondsToSelector:@selector(tableView:heightForHeaderInSection:)]) {
         return [tytableView.tyDelegate tableView:tableView heightForHeaderInSection:section];
     }
     return 0;
 }
 
-
+-(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    TYTableView *tytableView = (TYTableView *)tableView;
+    
+    if (tytableView.tyDelegate && [tytableView.tyDelegate respondsToSelector:@selector(tableView:heightForFooterInSection:)]) {
+        return [tytableView.tyDelegate tableView:tableView heightForFooterInSection:section];
+    }
+    return 0;
+}
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+}
 @end

@@ -83,8 +83,6 @@
     if (rowModel == nil) {
         NSLog(@"row model 不能为空");
     }
-    NSAssert(rowModel != nil, @"row model 不能为空");
-
     if (rowModel) {
         TYTableViewBaseCell *cell = [tableView dequeueReusableCellWithIdentifier:rowModel.itemIdentifier];
         
@@ -97,10 +95,15 @@
             }
         }
         [cell setContent:rowModel];
+        
         return cell;
     }
     
     return nil;
 }
 
+-(void)removeObjectAtIndexPath:(NSIndexPath *)indexPath
+{
+    [((TYTableBaseSectionModel*) self.sections[indexPath.section]).items removeObjectAtIndex:indexPath.row];
+}
 @end

@@ -15,6 +15,10 @@
 
 // 初始化
 - (instancetype)initWithSections:(NSArray *)sections;
-
-
+/**
+ *  @brief 移除row
+ *
+ *  @param indexPath
+ */
+- (void)removeObjectAtIndexPath:(NSIndexPath *)indexPath;
 @end
