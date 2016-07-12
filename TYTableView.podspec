@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "TYTableView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A deep package for UITableView."
 
   s.description  = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.author             = { "Donghai Cheng" => "dong723232@gmail.com" }
 
-  s.source       = { :git => "https://github.com/chengdonghai/TYTableView.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/chengdonghai/TYTableView.git", :tag => "0.0.2" }
 
   s.source_files  = "TYTableViewProj/TYTableView","TYTableViewProj/TYTableView/*.{h,m}"
 
